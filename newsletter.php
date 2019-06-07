@@ -127,14 +127,14 @@
 
 
     <div class="form-popup" id="MyForm">
-        <form action="newsletter_info.php" method="post" class="form-container">
+        <form action="newsletter_info.php" method="post" class="form-container"> <!-- form, som henter information fra PHP filen newsletter_info, som hentes ved hjælp af en "post-method" -->
             <div class="txt_container">
                 <h2>Abonnér på vores Newsletter!</h2>
-                <p>Her kan du blive opdateret med helt nye tilbud og specielle aktiviteter året rundt for EventCenter Viborg. Ved at abonnere på dette newsletter, får du dermed den bedste oplevelse muligt og misser ikke chancen for en unik oplevelse her hos os!</p>
+                <p>Her kan du blive opdateret med helt nye tilbud og specielle aktiviteter året rundt for Viborg Events. Ved at abonnere på dette newsletter, får du dermed den bedste oplevelse muligt og misser ikke chancen for en unik oplevelse her hos os!</p>
             </div>
 
             <div class="fill_container">
-                <input type="text" placeholder="e-mailadresse" name="mail" required>
+                <input type="text" placeholder="e-mailadresse" name="mail" required> <!-- name="mail" gemmer det indtastede mailadresse, som derefter gemmes i variablen $mail -->
 
             </div>
 
@@ -143,17 +143,17 @@
                 <input type="submit" value="Abonner">
             </div>
 
-            <button type="button" id="x" onclick="closeForm()">X</button>
+            <button type="button" id="x" onclick="closeForm()">X</button> <!-- lukke knap, onclick = closeForm() funktion intialiseres -->
         </form>
     </div>
 
     <script>
         function openForm() {
-            document.getElementById("MyForm").style.display = "block";
+            document.getElementById("MyForm").style.display = "block"; // funktion til få formularen vist, når funktionen intialiseres
         }
 
         function closeForm() {
-            document.getElementById("MyForm").style.display = "none";
+            document.getElementById("MyForm").style.display = "none"; // funtion til at lukke formularen, når luk knappen trykkes
         }
 
     </script>
